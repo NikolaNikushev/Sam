@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp"
+    >
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0px"
+
+            android:text="Project name1"
+            />
+            <ImageButton
+                android:src="@android:drawable/ic_menu_info_details"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/grade_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <fontys.fhict.delta.sam.GradeR
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

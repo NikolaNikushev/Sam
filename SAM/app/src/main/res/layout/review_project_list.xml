@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:id="@+id/review_projects"
+    >
+<TableLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+ <TableRow
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     >
+
+
+    <TextView
+        android:id="@+id/reviews_name_project"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:autoText="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Project name"
+        android:textSize="25dp"/>
+     <ImageView
+
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/reviews_expand_details"
+         android:src="@drawable/abc_ic_go_search_api_mtrl_alpha"
+         android:layout_alignTop="@+id/tableLayout"
+         android:layout_gravity="right"
+         />
+
+ </TableRow>
+        <TableRow>
+            <ListView
+                android:id="@+id/list_grades"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:autoText="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="project_zebra"
+                android:textSize="25dp"/>
+        </TableRow>
+</TableLayout>
+</RelativeLayout>

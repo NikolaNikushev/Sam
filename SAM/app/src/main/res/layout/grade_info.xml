@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp"
+    >
+
+    <TextView
+        android:id="@+id/grade_info"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:autoText="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="25dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/grade_submit"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:text="Submit"/>
+    <TextView
+        android:id="@+id/grade_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/grade_submit"
+        android:text="/10"
+/>
+    <NumberPicker
+        android:id="@+id/projects_timer_counter"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/grade_max"
+        />
+
+
+</RelativeLayout>
